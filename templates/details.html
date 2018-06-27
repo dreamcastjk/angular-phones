@@ -1,0 +1,22 @@
+
+  <!-- Шаблон для спецификации телефона, данные из PhoneController -->
+  <div ng-if="phone">
+
+    <img class="phone" ng-src="public/{{thumbnail}}">
+
+    <button>Back</button>
+    <button>Add to basket</button>
+
+    <h1 ng-bind="phone.name"></h1>
+
+    <p ng-bind="phone.description"></p>
+
+    <ul ng-repeat="photo in phone.images" class="phone-thumbs">
+      <li>
+        <img ng-src="public/{{photo}}">
+      </li>
+    </ul>
+
+  </div>
+
+

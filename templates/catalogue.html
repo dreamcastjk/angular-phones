@@ -1,0 +1,11 @@
+<ul class="phones">
+
+    <li ng-repeat="phone in phones" class="thumbnail">
+        <a ng-href="phones/{{phones.id}}" class="thumb">
+            <img alt="{{phone.name}}" ng-src="public/{{phone.imageUrl}}">
+        </a>
+        <a ng-href="phones/{{phone.id}}" ng-bind="phone.name"></a>
+        <p ng-bind="{{phone.snippet}}"></p>
+    </li>
+
+</ul>
