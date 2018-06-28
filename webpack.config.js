@@ -5,9 +5,7 @@ const path = require('path');
 module.exports = {
 
     mode: "production",
-    entry: {
-        filename: './app.js'
-    },
+    entry: './app.js',
     output:{
         filename: 'index.js',
         path: path.resolve(__dirname, 'public/js')

@@ -23,13 +23,9 @@ let app = angular.module('MyApplication',[
 ]);
 
 //конфигурация маршрутизации
-app.config(['$routeProvider' , '$locationProvider'] , function ($routeProvider , $locationProvider){
+app.config(['$routeProvider' , '$locationProvider' , function ($routeProvider , $locationProvider){
 
-        $locationProvider.html5mode(true);
-
-        $routeProvider.otherwise({
-            path: '/'
-        });
+        $locationProvider.html5Mode(true);
 
         //маршрут для основной страницы каталога
         $routeProvider.when('/' , {
@@ -47,7 +43,7 @@ app.config(['$routeProvider' , '$locationProvider'] , function ($routeProvider ,
 
         });
 
-}
+}]
 );//app.config
 
 app.run(['$rootScope'] , function ($rootScope){
